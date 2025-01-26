@@ -32,6 +32,5 @@ jobs:
           git add -f paper.pdf
           git commit -m "Add generated PDF" -a
           git push
-
       
             
