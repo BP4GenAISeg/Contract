@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+% theis TA (Bxs420)
+\usepackage{a4wide}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lipsum}
+
+\usepackage{graphicx}  % For including images
+\usepackage{xcolor}  % For a colorfull presentation
+\usepackage{listings}  % For presenting code 
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\usepackage{fitch} % LICS packages
+\usepackage{bussproofs}
+
+% TikZ Drawing packages
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+
+% New command for author names
+\newcommand{\authorpoints}[2]{{\large \texttt{(#2 points)} \texttt{[#1]}}}
+
+% Definition of a style for code, matter of taste
+\lstdefinestyle{mystyle}{
+language=Python,
+basicstyle=\ttfamily\footnotesize,
+backgroundcolor=\color[HTML]{F7F7F7},
+rulecolor=\color[HTML]{EEEEEE},
+identifierstyle=\color[HTML]{24292E},
+emphstyle=\color[HTML]{005CC5},
+keywordstyle=\color[HTML]{D73A49},
+commentstyle=\color[HTML]{6A737D},
+stringstyle=\color[HTML]{032F62},
+emph={@property,self,range,True,False},
+morekeywords={super,with,as,lambda},
+literate=%
+{+}{{{\color[HTML]{D73A49}+}}}1
+{-}{{{\color[HTML]{D73A49}-}}}1
+{*}{{{\color[HTML]{D73A49}*}}}1
+{/}{{{\color[HTML]{D73A49}/}}}1
+{=}{{{\color[HTML]{D73A49}=}}}1
+{/=}{{{\color[HTML]{D73A49}=}}}1,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=b,
+keepspaces=true,
+numbers=none,
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+tabsize=4,
+frame=single,
+}
+\lstset{style=mystyle}
+
+\usepackage{mymacros}
+
+\begin{document}
+\title{Bachelor Project Contract}
+\author{\color{red}Simon \& Hjalte}
+\date{}
+\maketitle
+
+\ls\\\textbf{Jeg tænker vi kan skrive project kontrakten her også kan vi finde ud af et smart system efterfølgende, når der ikke er ferie og deadline, men du er selvfølgelig velkomme til at begynde at sætte det op og ellers kan vi gøre det onsdag efter vinter ferien. - Du kan slette efter du har læst.}\ls
+\section*{Title}
+{\Large Multiscale Brain MRI Segmentation with Deep Generative Models.}
+
+
+\section*{Project Description}
+
+
+
+
+
+
+
+\section{Timeline}
+\texttt{
+Also, as discussed in the meeting, it would be nice to include the project timeline (data, literature review, SOTA reproducibility, methods/architecture design, implementation, experiments and results, and report).
+}
+\vspace{1em}
+
+\def\arraystretch{1.2} % add some margin to floor/ceil, def=1
+\noindent\begin{tabular}{|c|p{11cm}|p{4cm}|}\hline
+Week\textbackslash & TODO & Group Diary \\\hline\hline
+5 & This week we will both create the project contract. This includes scrutinize the papers sent and glimpse through the code. And, from this create a project contract and a timeline which fulfill this contract. &  \\\hline
+6 &  &  \\\hline
+\end{tabular}
+\vspace{1em}
+
+\ls\\{\color{red} Jeg tænkte at TODO var hvad vi skulle lave hver uge, samt hvem laver hvad. Og, i Group Diary, så i de fleste uger er det nok bare fælles effort, men er nok meget fint at havde. Så kan man skrive i slutningen af ugen, hvad er nået i ugen og hvad mangler vi at samle op på. 
+
+Btw. tænker at vi kan sende et billede af vores timeline til sidst om det er her eller noget smartere, da det virkede til at han gerne vil havde en timeline inkl.
+
+Tænker vi skal lave noget smartere end det her shit, men er en start også kan vi skifte over til github med noget project kanban eller lign. BTW. du kan skrive, hvis du har lign. eller andre ideer til noget af det. : ) - Du kan slette efter du har læst.}\ls
+
+
+
+
+
+
+
+
+\bibliography{bibliography}  % If you have some references, use BibTeX
+
+\end{document}

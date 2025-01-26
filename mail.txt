@@ -1,0 +1,31 @@
+----------------------- BESKED ---------------------------
+Proposed Titles:
+1. Hierarchical Brain MRI Segmentation with Generative Models: Exploring Variational Autoencoders and Denoising Diffusion Probabilistic Approaches
+
+
+2. Exploring Generative Models, such as Variational Autoencoders and Denoising-Diffusion Probabilistic Models, for Multi-Level Segmenting 3D Brain MRIs in Medical Imaging Analysis
+
+Project Description:
+We propose investigating the use of generative models - specifically Variational Autoencoders (VAEs) and Denoising Diffusion Probabilistic Models - to perform multi-level segmentation of 3D T1-weighted brain MRIs. Our main focus is to construct a multi-scale CNN architecture capable of handling different input sizes, thereby allowing more flexible and robust segmentation.
+
+If time permits, we also plan to explore a hierarchical segmentation method, which continually divides regions into left and right sub-regions in a tree-like structure.
+
+----------------------- RESPONS ---------------------------
+Instead of using generative models (which may not necessarily rely on deep learning), I recommend referring to them as deep generative models for more precision.
+
+For the project title, you could use the same, shorter, and more generic title for both projects: Multiscale Brain MRI Segmentation with Deep Generative Models.
+
+Then, you can describe the multiscale as multiresolution and hierarchical segmentation in the project description.
+
+For the project description, I suggest including a brief introduction to the problem (2-3 paragraphs in total). For example:
+- Explain why T1 brain MRI segmentation is important (e.g., clinical relevance, applications).
+- Highlight the challenges associated with segmentation, such as computational complexities, annotation costs, and dataset limitations.
+- Discuss the relevance of deep generative models to address these challenges, particularly in 3D generation tasks.
+- Elaborate on the problem of multiscale images (e.g., architectural issues in CNNs, managing different resolutions) and how hierarchical softmax can help by leveraging relationships between regions, enabling fine-grained analysis, and handling missing labels effectively.
+- It would also be helpful to reference the relevant literature, including some of the papers I have already shared.
+
+Also, as discussed in the meeting, it would be nice to include the project timeline (data, literature review, SOTA reproducibility, methods/architecture design, implementation, experiments and results, and report).
+
+Regarding the meeting, I will be available Thursday after 15:00, both tomorrow and next week.
+
+
