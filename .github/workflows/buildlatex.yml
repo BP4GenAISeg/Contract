@@ -2,7 +2,7 @@ name: Build LaTeX document
 on: 
   push:
     paths-ignore:
-      - paper.pdf
+      - contract.pdf
   schedule:
     - cron: '0 22 * * *'
 
@@ -24,12 +24,12 @@ jobs:
           name: PDF
           path: main.pdf
       - name: Rename PDF file
-        run: mv main.pdf paper.pdf
+        run: mv main.pdf contract.pdf
       - name: Commit and push PDF
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -f paper.pdf
+          git add -f contract.pdf
           git commit -m "Add generated PDF" -a
           git push
       
