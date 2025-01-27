@@ -1,4 +1,4 @@
-\documentclass[12pt]{report} % Structured document format
+\documentclass[12pt]{report} 
 
 % Fonts and Layout
 \usepackage{lmodern}
@@ -22,6 +22,14 @@
 % Graphics and Colors
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{titling}
+\usepackage{fancyhdr} 
+\usepackage{setspace}
+\doublespacing
+
+% Logo
+\newcommand{\universitylogo}{\includegraphics[width=0.7\textwidth]{ku_logo_dk_hh.png}}
+
 
 % Hyperlinks
 \usepackage{hyperref}
@@ -66,10 +74,25 @@
 
 \begin{document}
 
-\title{Bachelor Project Contract}
-\author{Simon \& Hjalte}
-\date{}
-\maketitle
+% Front Page
+\begin{titlepage}
+  \begin{center}
+      \universitylogo \\[1.5cm] % KU logo centered
+      {\Huge \textbf{Bachelor Project Contract}} \\[0.8cm]
+      {\Large \textit{Multiscale Brain MRI Segmentation with Deep Generative Models}} \\[2cm]
+      {\Large \textbf{Authors:}} \\
+      Simon \& Hjalte \\[1.5cm]
+      {\Large \textbf{University of Copenhagen}} \\[0.5cm]
+      {\Large Faculty of Science, Department of Computer Science} \\[1.5cm]
+      {\Large \textbf{Date:}} \\
+      \today
+  \end{center}
+  \vfill
+\end{titlepage}
+
+\pagestyle{fancy} % Enable fancy header/footer
+\fancyhead[L]{Bachelor Project Contract}
+\fancyhead[R]{Simon \& Hjalte}
 
 \section*{Title}
 \textbf{Multiscale Brain MRI Segmentation with Deep Generative Models}
