@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1737939606.31738 0
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1737939701.81908 0
   "/opt/texlive/texdir/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "bibliography.bib" 0 -1 0 ""
   "main.aux" 0 -1 0 "pdflatex"
@@ -7,7 +7,7 @@
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1737939605.15929 "main.tex" "main.pdf" "main" 1737939606.31754 0
+["pdflatex"] 1737939700.68871 "main.tex" "main.pdf" "main" 1737939701.81931 0
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/texlive/texdir/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -158,11 +158,11 @@
   "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1735694309 5485701 f429e2f489785dd1ebf6058d9e31ca73 ""
   "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1735694426 3347771 7813a8d66c29d4cbd8c09f30dc1a36bd ""
   "/opt/texlive/texdir/texmf.cnf" 1735694303 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "ku_logo_dk_hh.png" 1737939525.61391 74789 d0f349dfa28faa8677de236aeed3c0ad ""
-  "main.aux" 1737939606.0501 311 557e8aae9321097acff61737eb4f6d11 "pdflatex"
+  "ku_logo_dk_hh.png" 1737939618.82334 74789 d0f349dfa28faa8677de236aeed3c0ad ""
+  "main.aux" 1737939701.58105 311 557e8aae9321097acff61737eb4f6d11 "pdflatex"
   "main.bbl" 0 -1 0 "bibtex main"
-  "main.out" 1737939606.0501 85 ceff542cd169a0ea4b9e8f9132aa020a "pdflatex"
-  "main.tex" 1737939525.61691 3083 25ad6b8d14f0afb734de9edeeef8f17a ""
+  "main.out" 1737939701.58105 85 ceff542cd169a0ea4b9e8f9132aa020a "pdflatex"
+  "main.tex" 1737939618.82534 3083 25ad6b8d14f0afb734de9edeeef8f17a ""
   (generated)
   "main.aux"
   "main.log"
