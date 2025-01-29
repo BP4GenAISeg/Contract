@@ -99,18 +99,19 @@
 \textbf{Multiscale Brain MRI Segmentation with Deep Generative Models}
 
 \section*{Project Description}
-Segmentation of T1-weighted brain MRIs is a crucial task in medical imaging, with applications in disease diagnosis, treatment planning, and research into neurological conditions. However, this task comes with challenges, including high computational demands, the need for manually labeled datasets by medical experts, and variability in image resolutions and structures. Addressing these challenges requires innovative approaches that can adapt to varying input characteristics while delivering precise and robust segmentation results.
+Segmentation of T1-weighted brain MRIs is a crucial task in medical imaging, with applications in disease diagnosis, treatment planning, and research into neurological conditions. However, this task comes with challenges, including high computational demands, the need for manually labeled datasets by medical experts, and variability in image resolutions and structures. 
 \newline
 \newline
-In this project, we aim to leverage deep generative models to perform multi-level segmentation of 3D T1-weighted brain MRIs. These models are well-suited for handling the complexities of 3D medical imaging tasks due to their ability to capture detailed patterns and relationships within the data \cite{wu2023medsegdiff}. Our focus will be on developing a multiscale convolutional neural network (CNN) architecture capable of processing images at different resolutions, which will enable flexible and effective segmentation of brain structures. Multiscale feature aggregation in image segmentation has been shown to improve segmentation accuracy, particularly in models such as UNet++ and UNet 3+, which refine how features are combined from different resolutions \cite{zhou2020unet++,huang2021unet3+}.
+In this project, we aim to leverage deep generative models to perform multi-level segmentation of 3D T1-weighted brain MRIs. These models are well-suited for handling the complexities of 3D medical imaging tasks due to their ability to capture detailed patterns and relationships within the data \cite{wu2023medsegdiff}.\\\\
+We will develop a multiscale CNN architecture where each depth in the U-Net represents a different image resolution. Typically, input images of \(256 \times 256 \times c\) are progressively downsampled (e.g., to \(128 \times 128 \times c\)), capturing multiscale features. Unlike standard U-Net models, our approach also allows starting at lower resolutions (e.g., \(128 \times 128 \times c\)), ensuring segmentation at multiple scales with ground truth maps aligned at each decoding depth. This makes the model more adaptable and flexible, by ensuring consistent performance across resolutions, and improves segmentation accuracy by combining details from multiple levels.
+Multiscale feature aggregation in image segmentation has been shown to improve segmentation accuracy, particularly in models such as UNet++ and UNet 3+, which refine how features are combined from different resolutions.
+We implement a denoising diffusion probabilistic model (DDPM) using the U-Net architecture to approximate the underlying probability distribution of segmentation masks for the ground truth \cite{zhou2020unet++,huang2021unet3+}. 
 \newline
 \newline
-If time permits, to further enhance the segmentation process, we also propose exploring a hierarchical segmentation approach. This method involves dividing regions into left and right sub-regions in a tree-like structure, enabling more fine-grained analysis and incorporating spatial relationships between regions \cite{ghazi2022fastaid}. This hierarchical framework could also provide a systematic way to handle missing labels and improve segmentation accuracy.
+If time permits, to further enhance the segmentation process, we also propose exploring a hierarchical segmentation approach. This method involves dividing regions into left and right sub-regions in a tree-like structure. This approach allows for a more detailed analysis and naturally captures the spatial relationships between regions \cite{ghazi2022fastaid}. This hierarchical framework could also provide a systematic way to handle missing labels and improve segmentation accuracy.
 \newline
 \newline
-We will validate our proposed methods on benchmark datasets and compare their performance against state-of-the-art (SOTA) models. This will include tasks such as dataset preparation, literature review, reproducibility of existing models, architecture design, implementation, and evaluation of results.
-\newline
-\newline
+We will validate our proposed methods on benchmark datasets and compare their performance against state-of-the-art (SOTA) models. 
 Our ultimate goal is to address the challenges of multiscale segmentation by combining multiresolution analysis with hierarchical segmentation techniques, thereby contributing to the growing field of brain MRI analysis using deep generative models.
 
 \section{Timeline}
