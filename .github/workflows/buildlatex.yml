@@ -3,8 +3,9 @@ on:
   push:
     paths-ignore:
       - contract.pdf
-  schedule:
-    - cron: '0 22 * * *'
+  # As we aren't working on the contract anymore, I will comment out scheduling.
+  # schedule:
+  #   - cron: '0 22 * * *'
 
 jobs:
   build_latex:
